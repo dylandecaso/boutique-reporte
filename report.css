@@ -403,6 +403,10 @@ body {
 .takeaway p { font-size: 14.5px; color: var(--on-dark-soft); margin: 0; font-weight: 500; line-height: 1.55; }
 .takeaway p b { color: var(--on-dark); font-weight: 700; }
 
+/* ---- "Cambios" grid: align cards to the top so a card with a screenshot
+        doesn't force its row-neighbour to stretch into empty white space ---- */
+.insight-grid.grid-changes { align-items: start; }
+
 /* ---- featured "change" card: full width + multi-paragraph + screenshot ---- */
 .insight.insight-wide { grid-column: 1 / -1; }
 .insight.insight-wide .iw-body > p { margin-top: 0; line-height: 1.6; }
