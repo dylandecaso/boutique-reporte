@@ -403,14 +403,42 @@ body {
 .takeaway p { font-size: 14.5px; color: var(--on-dark-soft); margin: 0; font-weight: 500; line-height: 1.55; }
 .takeaway p b { color: var(--on-dark); font-weight: 700; }
 
-/* ---- "Cambios" grid: align cards to the top so a card with a screenshot
-        doesn't force its row-neighbour to stretch into empty white space ---- */
-.insight-grid.grid-changes { align-items: start; }
-
 /* ---- featured "change" card: full width + multi-paragraph + screenshot ---- */
 .insight.insight-wide { grid-column: 1 / -1; }
 .insight.insight-wide .iw-body > p { margin-top: 0; line-height: 1.6; }
 .insight.insight-wide .iw-body > p + p { margin-top: 11px; }
+
+/* a wide (landscape) screenshot fills more of a full-width card */
+.shot.shot-wide .shot-btn { max-width: min(780px, 100%); }
+
+/* two screenshots side by side inside a wide card */
+.shot-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; align-items: start; }
+.shot-row .shot { margin-top: 0; }
+.shot-row .shot-btn { max-width: 100%; }
+.shot-row .shot-scroll { min-width: 0; }
+@media (max-width: 720px) { .shot-row { grid-template-columns: 1fr; } }
+
+/* scrollable "mini browser" frame for a full-page screenshot */
+.shot-scroll .browser {
+  border: 1px solid var(--border-strong); border-radius: 10px;
+  overflow: hidden; background: var(--card); box-shadow: var(--sh-card);
+}
+.browser-bar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 12px; background: var(--bg-2); border-bottom: 1px solid var(--border);
+}
+.browser-bar .bdot { width: 9px; height: 9px; border-radius: 50%; background: var(--border-strong); flex: none; }
+.browser-bar .burl {
+  margin-left: 8px; min-width: 0; flex: 1;
+  font-size: 11px; color: var(--ink-3); font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px;
+}
+.browser-view { height: 300px; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+.browser-view img { display: block; width: 100%; height: auto; }
+.browser-view::-webkit-scrollbar { width: 10px; }
+.browser-view::-webkit-scrollbar-track { background: var(--bg-2); }
+.browser-view::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 6px; border: 2px solid var(--card); }
 
 /* screenshot thumbnail inside a card */
 .shot { margin: 18px 0 0; }
