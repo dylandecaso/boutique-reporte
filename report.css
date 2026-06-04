@@ -123,14 +123,22 @@ body {
 /* ============================================================ HEADER (web report) */
 .report-head {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "brand brand"
+    "title meta";
+  column-gap: 28px;
   padding: 0 0 30px;
   border-bottom: 1px solid var(--border-strong);
 }
 .report-head::after { display: none; }
+.report-head .head-left { grid-area: title; }
 
-/* top utility bar */
+/* top utility bar (brand + month switcher) */
 .brand {
-  display: flex; align-items: center; gap: 11px;
+  grid-area: brand;
+  display: flex; align-items: center; gap: 11px; flex-wrap: wrap; row-gap: 12px;
   padding-bottom: 22px; margin-bottom: 0;
   border-bottom: 1px solid var(--border-strong);
 }
@@ -173,15 +181,48 @@ body {
 .head-meta { text-align: right; font-size: 12px; color: var(--ink-3); font-weight: 600; }
 .head-meta b { color: var(--ink-2); }
 
-/* the web-report header places utility text top-right */
-.report-head { display: block; }
+/* the web-report header: date + meta sit bottom-right, aligned with the title */
 .report-head .head-right {
-  position: absolute; top: 0; right: 0; height: 22px;
-  flex-direction: row; align-items: center; gap: 0;
+  grid-area: meta;
+  position: static;
+  align-self: end;
+  flex-direction: column; align-items: flex-end;
+  gap: 10px; height: auto;
 }
-.report-head .head-right .range-pill { border: none; padding: 0; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--label); font-weight: 700; }
-.report-head .head-right .range-pill svg,
-.report-head .head-meta { display: none; }
+
+/* ---- month switcher (segmented control) ---- */
+.month-switch {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 4px 4px 4px 9px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+}
+.month-switch .ms-ic { display: inline-flex; color: var(--label); margin-right: 3px; }
+.month-switch .ms-ic svg { width: 15px; height: 15px; }
+.ms-item {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  padding: 6px 14px; border-radius: var(--r-pill);
+  font-size: 12.5px; font-weight: 700; color: var(--ink-3);
+  text-decoration: none; letter-spacing: .01em; white-space: nowrap;
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+}
+.ms-item i { font-style: normal; font-size: 11px; font-weight: 600; color: var(--label); }
+.ms-item:hover { color: var(--ink); background: rgba(17,24,39,.05); }
+.ms-item.is-active { background: var(--card); color: var(--ink); box-shadow: var(--sh-card); cursor: default; }
+.ms-item.is-active i { color: var(--gold); }
+
+/* header stacks on narrow screens */
+@media (max-width: 720px) {
+  .report-head {
+    grid-template-columns: 1fr;
+    grid-template-areas: "brand" "title" "meta";
+  }
+  .report-head .head-right { align-items: flex-start; margin-top: 18px; }
+  .head-meta { text-align: left; }
+  .month-switch { margin-left: 0; }
+}
 
 /* ============================================================ KPI cards */
 .kpi {

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumen de Analítica · Abril 2026 — La boutique de la limpieza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- ===================================================== HEADER -->
+  <header class="report-head" data-screen-label="Encabezado">
+    <div class="brand">
+      <div class="brand-mark">lb</div>
+      <div class="brand-name">
+        <b>La boutique de la limpieza</b>
+        <span>Reporte mensual de tráfico web</span>
+      </div>
+      <!-- Selector de meses · para sumar un mes nuevo, agregá un <a> y marcá .is-active el actual -->
+      <nav class="month-switch" aria-label="Cambiar de mes">
+        <span class="ms-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>
+        <a class="ms-item is-active" href="abril.html" aria-current="page">Abril <i>’26</i></a>
+        <a class="ms-item" href="index.html">Mayo <i>’26</i></a>
+      </nav>
+    </div>
+    <div class="head-left">
+      <p class="report-title">Resumen de Analítica</p>
+      <h1 class="report-h1">Abril <em>2026</em></h1>
+      <p class="report-desc">Resumen del primer mes online de la tienda: el lanzamiento. Tráfico, comportamiento de los visitantes, origen de las sesiones y resultados de negocio. Datos tomados del panel de analítica del administrador.</p>
+    </div>
+    <div class="head-right">
+      <span class="range-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+        13 — 30 Abr 2026
+      </span>
+      <div class="head-meta">
+        Primer mes online · <b>Mes de lanzamiento</b><br>
+        Huso horario: <b>AR · Argentina</b>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================== HERO KPIs -->
+  <section class="section" data-screen-label="KPIs principales">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Estadísticas clave</h2>
+        <p class="section-sub">Los números que mejor resumen abril, el mes de lanzamiento (13–30 abr · 18 días). Sin variaciones: es el primer mes online y queda como base de comparación.</p>
+      </div>
+      <span class="section-note">Mes 01 · base de comparación</span>
+    </div>
+    <div class="grid g-4">
+      <div class="card kpi dark">
+        <span class="eyebrow">Sesiones del sitio</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">268</span>
+        </div>
+        <span class="kpi-foot">Visitas totales · base de comparación</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">Visitantes únicos</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">73</span>
+        </div>
+        <span class="kpi-foot">~3,7 visitas por persona</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">Nuevos usuarios</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">12</span>
+        </div>
+        <span class="kpi-foot">16% de los visitantes se registraron</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">Promedio diario</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">14,9</span>
+        </div>
+        <span class="kpi-foot">Sesiones por día (sobre 18 días)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== BUSINESS BAND -->
+  <section class="section" data-screen-label="Resultados de negocio">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Resultados del negocio</h2>
+        <p class="section-sub">Lo que el tráfico del lanzamiento generó en pedidos y facturación.</p>
+      </div>
+      <span class="section-note">Conversión 0,75%</span>
+    </div>
+    <div class="card biz">
+      <div class="biz-grid">
+        <div class="biz-cell">
+          <span class="eyebrow">Facturación</span>
+          <div class="biz-num money tnum">$ 95.400</div>
+          <span class="biz-foot">ARS · <b>2 pedidos</b> completados</span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Ticket promedio</span>
+          <div class="biz-num tnum">$ 47.700</div>
+          <span class="biz-foot">Por pedido</span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Pedidos</span>
+          <div class="biz-num tnum">2</div>
+          <span class="biz-foot">Pedidos completados</span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Conversión</span>
+          <div class="biz-num tnum">0,75%</div>
+          <span class="biz-foot">2 pedidos sobre 268 sesiones</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== DAILY TREND -->
+  <section class="section" data-screen-label="Sesiones a lo largo del mes">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Sesiones a lo largo del mes</h2>
+        <p class="section-sub">Sesiones diarias del 13 al 30 de abril. El día del lanzamiento marcó el pico del mes.</p>
+      </div>
+      <span class="section-note">Pico: 13 abr · 62 sesiones</span>
+    </div>
+    <div class="card chart-wrap">
+      <div class="bars" id="dailyBars"></div>
+      <div class="axis-row" id="dailyAxis"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================== TIME OF DAY -->
+  <section class="section" data-screen-label="Cuándo nos visitan">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">¿En qué franja se mueve el sitio?</h2>
+        <p class="section-sub">Actividad por momento del día (sobre 268 sesiones, hora Argentina).</p>
+      </div>
+      <span class="section-note">La noche concentra el 40%</span>
+    </div>
+    <div class="tod-grid" id="todGrid"></div>
+  </section>
+
+  <!-- ===================================================== ORIGEN / SOURCES + DEVICES -->
+  <section class="section" data-screen-label="De dónde llegan">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">¿De dónde llegaron?</h2>
+        <p class="section-sub">Fuentes de las sesiones y dispositivos del lanzamiento. Instagram traccionó el mes.</p>
+      </div>
+      <span class="section-note">Instagram 32% · Mobile 65%</span>
+    </div>
+    <div class="grid g-2">
+      <div class="card pad">
+        <div class="section-head" style="margin:0 0 18px;">
+          <span class="eyebrow">Fuentes de tráfico · 268 sesiones</span>
+        </div>
+        <div class="bar-list" id="sources"></div>
+      </div>
+      <div class="card donut-card">
+        <h4>Dispositivos</h4>
+        <div class="donut-body">
+          <div class="donut" id="donutDevice"><div class="donut-center"><span class="dc-label">Sesiones</span><span class="dc-num">268</span></div></div>
+          <div class="legend" id="legendDevice"></div>
+        </div>
+        <p style="font-size:11.5px; color:var(--label); font-weight:600; margin:18px 0 0; line-height:1.5;">7 de cada 10 sesiones entraron desde el celular: la apuesta mobile-first del lanzamiento.</p>
+      </div>
+    </div>
+
+    <div class="cmp-note" style="margin-top:16px; margin-bottom:0;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
+      <p><b>Nota sobre el SEO:</b> las optimizaciones de SEO se aplicaron a fines de abril. La indexación de Google es lenta, así que durante <b>mayo deberíamos empezar a ver Google Orgánica creciendo de a poco</b> (en abril ya aportó el 14% de las sesiones).</p>
+    </div>
+  </section>
+
+  <!-- ===================================================== INSIGHTS / BALANCE -->
+  <section class="section" data-screen-label="Balance del mes">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Balance del mes</h2>
+        <p class="section-sub">Qué funcionó y qué hay que mejorar en el primer mes online.</p>
+      </div>
+      <span class="section-note">Mes 1 · la base está armada</span>
+    </div>
+    <div class="insight-grid">
+      <div class="insight">
+        <div class="insight-ic ic-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+        <div>
+          <h4>Lanzamiento ruidoso</h4>
+          <p>El día de la inauguración (13 abr) marcó el pico del mes con <b>62 sesiones</b> — más del triple del promedio diario. El arranque logró una atención inicial fuerte.</p>
+        </div>
+      </div>
+      <div class="insight">
+        <div class="insight-ic ic-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+        <div>
+          <h4>Audiencia mobile-first</h4>
+          <p>El <b>65% de las sesiones entró desde el celular</b> (~174 de 268). La apuesta mobile-first valió la pena: la prioridad es que catálogo, carrito y checkout vuelen en el teléfono.</p>
+        </div>
+      </div>
+      <div class="insight">
+        <div class="insight-ic ic-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.3"/></svg></div>
+        <div>
+          <h4>Instagram traccionó el mes</h4>
+          <p>El <b>32% del tráfico vino de Instagram</b> (87 sesiones) y otro 46% de tráfico directo (link compartido / historias). El canal quedó validado — la propuesta es escalarlo.</p>
+        </div>
+      </div>
+      <div class="insight">
+        <div class="insight-ic ic-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M14 7h7v7"/></svg></div>
+        <div>
+          <h4>Días valle entre picos</h4>
+          <p>El <b>20 (1 sesión)</b> y el <b>24 (0)</b> cayeron casi a cero, y otros 4 días quedaron por debajo de 6 sesiones. El tráfico no se sostuvo entre picos: hace falta un calendario de contenido constante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="takeaway">
+      <div class="insight-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2h6c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg></div>
+      <div>
+        <h4>La historia de abril en una frase</h4>
+        <p>Abril fue el <b>mes de lanzamiento</b> (18 días, 13–30 abr): un arranque ruidoso con <b>62 sesiones el primer día</b>, un <b>ticket alto ($ 47.700)</b> y 2 pedidos para una conversión inicial de <b>0,75%</b>. Instagram traccionó el tráfico (32%) y la base quedó mobile-first (65%). El SEO recién se aplicó al cierre del mes — sus frutos deberían empezar a verse en mayo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== PRÓXIMO MES -->
+  <section class="section" data-screen-label="Qué sigue para mayo">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Qué sigue para mayo</h2>
+        <p class="section-sub">Próximos pasos planteados al cierre del lanzamiento para sostener el ritmo y aprovechar la base armada.</p>
+      </div>
+      <span class="section-note">Próximos pasos</span>
+    </div>
+    <div class="card pad next-list">
+      <div class="nl-row">
+        <span class="nl-n">01</span>
+        <div class="nl-body">
+          <h5>Mejorar el slide de categorías en celular</h5>
+          <p>Hoy se muestran de a 3 categorías; pasan a verse de a <b>2</b> para que se lean mejor desde el teléfono.</p>
+        </div>
+      </div>
+      <div class="nl-row">
+        <span class="nl-n">02</span>
+        <div class="nl-body">
+          <h5>Terminar de subir productos solicitados en tickets</h5>
+          <p>Completar el catálogo con los <b>productos que los clientes pidieron</b> a través de los tickets de soporte.</p>
+        </div>
+      </div>
+      <div class="nl-row">
+        <span class="nl-n">03</span>
+        <div class="nl-body">
+          <h5>Primeros frutos del SEO</h5>
+          <p>Las optimizaciones de SEO se terminaron de aplicar a fines de abril. La indexación es lenta — <b>durante mayo deberíamos empezar a ver mejoras de a poco</b>.</p>
+        </div>
+      </div>
+      <div class="nl-row">
+        <span class="nl-n">04</span>
+        <div class="nl-body">
+          <h5>Botón “Compartir producto”</h5>
+          <p>Sumar el botón a cada ficha de producto para que se pueda <b>compartir por distintos medios</b> (WhatsApp, redes, link).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== FOOTER -->
+  <footer class="report-foot">
+    <span class="ft-brand">
+      <span class="brand-mark" style="width:24px;height:24px;font-size:11px;border-radius:7px;">lb</span>
+      La boutique de la limpieza
+    </span>
+    <span>Resumen de analítica · Abril 2026 <span class="dotsep">·</span> Datos del panel de administración <span class="dotsep">·</span> No incluye actividad en vivo</span>
+  </footer>
+
+</div>
+
+<script src="charts-abril.js"></script>
+<script src="animations.js"></script>
+<template id="__bundler_thumbnail">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="#2f6bff"/>
+  <rect x="30" y="52" width="9" height="18" rx="2.5" fill="#bcd0ff"/>
+  <rect x="45.5" y="40" width="9" height="30" rx="2.5" fill="#ffffff"/>
+  <rect x="61" y="30" width="9" height="40" rx="2.5" fill="#8fe3b6"/>
+  <circle cx="34.5" cy="34" r="4" fill="#ffffff"/>
+  <path d="M34.5 34 L50 26 L65.5 22" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</template>
+</body>
+</html>
