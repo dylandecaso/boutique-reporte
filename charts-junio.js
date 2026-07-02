@@ -67,6 +67,6 @@ barList('cities', [
   { code: 'AR', name: 'Caseros',      sub: 'Buenos Aires · 4,5%', v: 6 },
 ]);
 barList('sources', [
-  { code: 'D', name: 'Directa',  tag: '↑ 63%',  v: 104 },
-  { code: 'O', name: 'Orgánica', tag: '↑ 227%', v: 106 },
+  { code: 'D', name: 'Directa',  tag: '↑ 35%', v: 104 },
+  { code: 'O', name: 'Orgánica', tag: '↑ 93%', v: 106 },
 ], { alt: true });
