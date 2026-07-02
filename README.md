@@ -5,6 +5,7 @@ Sitio estático con el reporte de analítica mensual y el deck de presentación.
 ## Estructura
 
 - **`index.html`** — Reporte web de **Mayo 2026** (la página principal)
+- **`junio.html`** — Reporte web de **Junio 2026** (cambios + próximos pasos; métricas de tráfico en carga)
 - **`abril.html`** — Reporte web de **Abril 2026** (mes de lanzamiento)
 - **`presentacion.html`** — Deck de slides para presentar (10 slides, ←/→ para navegar)
 - `report.css` — estilos del reporte (incluye el selector de meses del header)
@@ -30,4 +31,4 @@ Cada reporte mensual es su propia página. En el header hay un **selector de mes
 
 ---
 
-Datos: panel de administración de la tienda · Período actual: Mayo 2026 · Histórico: Abril 2026
+Datos: panel de administración de la tienda · Período actual: Junio 2026 (métricas en carga) · Histórico: Mayo 2026, Abril 2026
