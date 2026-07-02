@@ -31,7 +31,7 @@
     <div class="head-left">
       <p class="report-title">Resumen de Analítica</p>
       <h1 class="report-h1">Junio <em>2026</em></h1>
-      <p class="report-desc">Resumen del tercer mes online: un mes de fuerte actividad comercial y de producto. Esta edición detalla todo lo construido y mejorado durante junio y los próximos pasos. Las métricas de tráfico se incorporan al cierre, con los datos del panel de administración.</p>
+      <p class="report-desc">Resumen del tercer mes online: un mes de fuerte actividad comercial y de producto. Tráfico, comportamiento de los visitantes, origen de las sesiones, resultados de negocio, y todo lo construido y mejorado durante junio. Datos tomados del panel de analítica del administrador.</p>
     </div>
     <div class="head-right">
       <span class="range-pill">
@@ -45,18 +45,311 @@
     </div>
   </header>
 
-  <!-- ===================================================== MÉTRICAS PENDIENTES -->
-  <section class="section" data-screen-label="Métricas de tráfico">
+  <!-- ===================================================== HERO KPIs -->
+  <section class="section" data-screen-label="KPIs principales">
     <div class="section-head">
       <div>
         <h2 class="section-title">Estadísticas clave</h2>
-        <p class="section-sub">Los números de tráfico, comportamiento y resultados de negocio de junio.</p>
+        <p class="section-sub">Los números que mejor resumen junio. Las variaciones (▲▼) son las que calcula el panel contra su período anterior automático.</p>
       </div>
-      <span class="section-note">Datos en carga</span>
+      <span class="section-note">Datos del panel · 1–30 jun</span>
     </div>
-    <div class="cmp-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></svg>
-      <p><b>Métricas de tráfico de junio: en carga.</b> Las estadísticas del mes —sesiones, visitantes, pedidos, facturación, conversión, fuentes de tráfico y comportamiento— se completan al cierre con los datos del panel de administración y Google Analytics, para mantener la serie comparable con abril y mayo. Esta página ya reúne el <b>detalle completo de todo lo que se construyó y mejoró durante junio</b> y los <b>próximos pasos</b> propuestos; los números se suman apenas estén disponibles.</p>
+    <div class="grid g-4">
+      <div class="card kpi accent">
+        <span class="eyebrow">Sesiones del sitio</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">217</span>
+          <span class="delta up">▲ 135,9%</span>
+        </div>
+        <span class="kpi-foot">Visitas totales al sitio</span>
+      </div>
+      <div class="card kpi accent">
+        <span class="eyebrow">Visitantes únicos</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">132</span>
+          <span class="delta up">▲ 288,2%</span>
+        </div>
+        <span class="kpi-foot">Personas distintas</span>
+      </div>
+      <div class="card kpi accent">
+        <span class="eyebrow">Clics totales</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">734</span>
+          <span class="delta up">▲ 92,1%</span>
+        </div>
+        <span class="kpi-foot">Interacciones registradas</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">Páginas por sesión</span>
+        <div class="kpi-row">
+          <span class="kpi-num tnum">2,48</span>
+        </div>
+        <span class="kpi-foot">Rebote 59,4% · duración 17m 02s</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== JUNIO VS MAYO -->
+  <section class="section" data-screen-label="Junio vs Mayo">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Junio vs Mayo · la evolución</h2>
+        <p class="section-sub">Tercer mes completo frente al segundo. El crecimiento fue parejo: más tráfico y, sobre todo, más ventas.</p>
+      </div>
+      <span class="section-note">Mes 03 vs Mes 02</span>
+    </div>
+
+    <!-- the three business wins -->
+    <div class="cmp-hero-grid">
+      <div class="card cmp-card up">
+        <span class="eyebrow">Facturación</span>
+        <div class="cmp-delta up">+73%</div>
+        <div class="cmp-flow">
+          <span class="leg abr"><small>Mayo</small><b>$ 190.040</b></span>
+          <span class="arrow">→</span>
+          <span class="leg may"><small>Junio</small><b>$ 329.116</b></span>
+        </div>
+      </div>
+      <div class="card cmp-card up">
+        <span class="eyebrow">Pedidos</span>
+        <div class="cmp-delta up">×2,25</div>
+        <div class="cmp-flow">
+          <span class="leg abr"><small>Mayo</small><b>4</b></span>
+          <span class="arrow">→</span>
+          <span class="leg may"><small>Junio</small><b>9</b></span>
+        </div>
+      </div>
+      <div class="card cmp-card up">
+        <span class="eyebrow">Tasa de conversión</span>
+        <div class="cmp-delta up">+37%</div>
+        <div class="cmp-flow">
+          <span class="leg abr"><small>Mayo</small><b>3,0%</b></span>
+          <span class="arrow">→</span>
+          <span class="leg may"><small>Junio</small><b>4,1%</b></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- full comparison table -->
+    <div class="card pad">
+      <div class="cmp-row head">
+        <span>Métrica</span>
+        <span class="ta-r">Mayo</span>
+        <span></span>
+        <span class="ta-r">Junio</span>
+        <span class="ta-r">Cambio</span>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Sesiones</div>
+        <div class="cmp-v abr tnum">133</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">217</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ +63%</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Visitantes únicos</div>
+        <div class="cmp-v abr tnum">53</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">132</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ +149%</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Clics totales</div>
+        <div class="cmp-v abr tnum">450</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">734</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ +63%</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Facturación</div>
+        <div class="cmp-v abr tnum">$ 190.040</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">$ 329.116</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ +73%</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Pedidos</div>
+        <div class="cmp-v abr tnum">4</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">9</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ ×2,25</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Tasa de conversión</div>
+        <div class="cmp-v abr tnum">3,0%</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">4,1%</div>
+        <div class="cmp-badge-cell"><span class="delta up">▲ +37%</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-k">Ticket promedio<small>más pedidos, tickets algo más chicos</small></div>
+        <div class="cmp-v abr tnum">$ 47.510</div>
+        <div class="cmp-arrow">→</div>
+        <div class="cmp-v may tnum">$ 36.568</div>
+        <div class="cmp-badge-cell"><span class="delta down">▼ −23%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== BUSINESS BAND -->
+  <section class="section" data-screen-label="Resultados de negocio">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Resultados del negocio</h2>
+        <p class="section-sub">Lo que el tráfico de junio generó en pedidos y facturación.</p>
+      </div>
+    </div>
+    <div class="card biz">
+      <div class="biz-grid">
+        <div class="biz-cell">
+          <span class="eyebrow">Facturación</span>
+          <div class="biz-num money tnum">$ 329.116</div>
+          <span class="biz-foot">Ticket promedio <b>$ 36.568</b></span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Pedidos</span>
+          <div class="biz-num tnum">9</div>
+          <span class="biz-foot">Conversión <b>4,1%</b></span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Usuarios recurrentes</span>
+          <div class="biz-num tnum">9</div>
+          <span class="biz-foot">Con más de una visita histórica</span>
+        </div>
+        <div class="biz-cell">
+          <span class="eyebrow">Duración promedio</span>
+          <div class="biz-num tnum">17m 02s</div>
+          <span class="biz-foot">Tiempo por sesión · 2,48 pág.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== AUDIENCE / DONUTS -->
+  <section class="section" data-screen-label="Con qué nos visitan">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Con qué nos visitan</h2>
+        <p class="section-sub">Dispositivo, navegador y sistema operativo sobre las 217 sesiones.</p>
+      </div>
+      <span class="section-note">Mobile manda: 71%</span>
+    </div>
+    <div class="grid g-3">
+      <div class="card donut-card">
+        <h4>Sesiones por dispositivo</h4>
+        <div class="donut-body">
+          <div class="donut" id="donutDevice"><div class="donut-center"><span class="dc-label">Sesiones</span><span class="dc-num">217</span></div></div>
+          <div class="legend" id="legendDevice"></div>
+        </div>
+      </div>
+      <div class="card donut-card">
+        <h4>Navegadores</h4>
+        <div class="donut-body">
+          <div class="donut" id="donutBrowser"><div class="donut-center"><span class="dc-label">Sesiones</span><span class="dc-num">217</span></div></div>
+          <div class="legend" id="legendBrowser"></div>
+        </div>
+      </div>
+      <div class="card donut-card">
+        <h4>Sistemas operativos</h4>
+        <div class="donut-body">
+          <div class="donut" id="donutOs"><div class="donut-center"><span class="dc-label">Sesiones</span><span class="dc-num">217</span></div></div>
+          <div class="legend" id="legendOs"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== GEOGRAPHY + SOURCES -->
+  <section class="section" data-screen-label="De dónde y cómo llegan">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">¿De dónde y cómo llegan?</h2>
+        <p class="section-sub">Ciudades con más sesiones (solo Argentina) y las fuentes de tráfico del mes.</p>
+      </div>
+    </div>
+    <div class="grid g-2">
+      <div class="card pad">
+        <div class="section-head" style="margin:0 0 18px;">
+          <span class="eyebrow">Top ciudades · 132 sesiones geolocalizadas</span>
+        </div>
+        <div class="bar-list" id="cities"></div>
+      </div>
+      <div class="card pad">
+        <div class="section-head" style="margin:0 0 14px;">
+          <span class="eyebrow">Fuentes principales · sesiones</span>
+        </div>
+        <div class="bar-list" id="sources"></div>
+        <div style="margin-top:18px; padding-top:16px; border-top:1px solid var(--border);">
+          <span class="eyebrow">Medios</span>
+          <div class="chips" style="margin-top:12px;">
+            <span class="chip">Referral <b>110</b></span>
+            <span class="chip">Orgánico <b>105</b></span>
+            <span class="chip">Social <b>2</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== PRODUCTS CLICKED -->
+  <section class="section" data-screen-label="Productos más clickeados">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">¿Qué productos miran más?</h2>
+        <p class="section-sub">Productos más clickeados según cómo llegó el visitante: desde Google o navegando dentro de la tienda.</p>
+      </div>
+    </div>
+    <div class="grid g-2">
+      <div class="card pad">
+        <div class="section-head" style="margin:0 0 6px;">
+          <span class="eyebrow">🔍 Más clickeados desde Google · 22</span>
+        </div>
+        <div class="row-list">
+          <div class="rl"><span class="rl-name">Papel Higiénico eNeFe Hoja Doble 24un x 50m</span><span class="count-pill tnum">5</span></div>
+          <div class="rl"><span class="rl-name">Medidor para lavarropas Enefe</span><span class="count-pill tnum">3</span></div>
+          <div class="rl"><span class="rl-name">Paño Amarillo Chico</span><span class="count-pill tnum">2</span></div>
+          <div class="rl"><span class="rl-name">Papel Higiénico Elegante Doble Hoja 4un x 30m</span><span class="count-pill tnum">2</span></div>
+        </div>
+      </div>
+      <div class="card pad">
+        <div class="section-head" style="margin:0 0 6px;">
+          <span class="eyebrow">🛒 Más clickeados dentro de la web · 20</span>
+        </div>
+        <div class="row-list">
+          <div class="rl"><span class="rl-name">Bolsas Para Residuos 80x110cm Negro x 50un</span><span class="count-pill tnum">4</span></div>
+          <div class="rl"><span class="rl-name">Percarbonato de Sodio</span><span class="count-pill tnum">4</span></div>
+          <div class="rl"><span class="rl-name">Bolsas Sipack 80x110cm Negro x 10un</span><span class="count-pill tnum">2</span></div>
+          <div class="rl"><span class="rl-name">Limpia Metales Venus 900cm3</span><span class="count-pill tnum">2</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== COOKIE CONSENT -->
+  <section class="section" data-screen-label="Consentimiento de cookies">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Consentimiento de cookies</h2>
+        <p class="section-sub">Decisiones sobre el banner de cookies. Métrica nueva: se registra desde el 18 de junio de 2026, no incluye visitas anteriores.</p>
+      </div>
+      <span class="section-note">88 decisiones</span>
+    </div>
+    <div class="grid g-3">
+      <div class="card kpi">
+        <span class="eyebrow">✅ Aceptaron</span>
+        <div class="kpi-row"><span class="kpi-num tnum">23</span><span class="delta up">26,1%</span></div>
+        <span class="kpi-foot">Visitantes únicos</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">✖ Rechazaron</span>
+        <div class="kpi-row"><span class="kpi-num tnum">37</span><span class="delta down">42,0%</span></div>
+        <span class="kpi-foot">Visitantes únicos</span>
+      </div>
+      <div class="card kpi">
+        <span class="eyebrow">🕒 Ignoraron</span>
+        <div class="kpi-row"><span class="kpi-num tnum">28</span><span class="delta">31,8%</span></div>
+        <span class="kpi-foot">Visitantes únicos</span>
+      </div>
     </div>
   </section>
 
@@ -208,11 +501,12 @@
       <span class="brand-mark" style="width:24px;height:24px;font-size:11px;border-radius:7px;">lb</span>
       La boutique de la limpieza
     </span>
-    <span>Resumen de analítica · Junio 2026 <span class="dotsep">·</span> Datos del panel de administración <span class="dotsep">·</span> Métricas de tráfico en carga</span>
+    <span>Resumen de analítica · Junio 2026 <span class="dotsep">·</span> Datos del panel de administración (1–30 jun) <span class="dotsep">·</span> No incluye actividad en vivo</span>
   </footer>
 
 </div>
 
+<script src="charts-junio.js"></script>
 <script src="animations.js"></script>
 <script src="lightbox.js"></script>
 </body>
